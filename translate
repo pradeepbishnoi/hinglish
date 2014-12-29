@@ -1,5 +1,15 @@
 #!/bin/sh
-# My Hinglish Translator from English to Hindi
+# My Hinglish Translator -Input any Hinglish text and get Hindi output
+
+if [ $# -eq 0 ]; then
+	echo "\tHinglish Translator - Shell based"
+	echo "\t"
+	echo "\t\tpass any Hinglish text as input and get converted Hindi output"
+	echo "\n\t\t ./translate pradeep bishnoi naya saal mubaarak \n"
+	echo "\n\t\t Output :\n"
+	echo "\t\t प्रदीप बिश्नोई साल मुबारक"
+	echo ""
+fi
 
 string=""
 for var in "$@"
