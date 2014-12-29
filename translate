@@ -1,0 +1,12 @@
+#!/bin/sh
+# My Hinglish Translator from English to Hindi
+
+string=""
+for var in "$@"
+do
+    dict=( `grep -w "$var" dictionary.txt` )
+    #echo ${dict[1]}
+    string="$string ${dict[1]} " 
+done
+echo $string
+
